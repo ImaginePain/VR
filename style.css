@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap');
+*
+{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins', sans-serif;
+    list-style: none;
+    text-decoration: none;
+
+}
+body
+{
+    background-image: linear-gradient(90deg,#3e32a8,#e310c7) ;
+    min-height: 1500px;
+    width: 100%;
+
+}
+
+.title{
+    text-align: center;
+    text-decoration: none;
+    border-radius: 20px;
+    color:#fff;
+}
+html{
+    scroll-behavior: smooth;
+}
+#section1{
+    height:700px;
+    display: inline-block;
+    width: 100%;
+    
+}
+#section2{
+    height:700px;
+    background: #0a2a43;
+    display: inline-block;
+    width: 100%;
+}s
+#section3{
+    height:520px;
+    background: #0a2a43;
+    display: inline-block;
+    width: 100%;
+}
+#section4{
+    height:500px;
+    background: #0a2a43;
+    display: inline-block;
+    width: 100%;
+}
+.sub_size
+{
+    text-align: center;
+    text-decoration: none;
+    color:#fff;
+    
+
+}
+.text_size
+{
+    text-align: center;
+    text-decoration: none;
+    color:#fff;
+}
+
+.parallax{
+    height: 400px;
+    background: url(Wedding1.jpg) no-repeat fixed 100%;
+    background-size: cover;
+}
+.parralax-inner{
+    padding-top: 30%;
+    padding-bottom: 30%;
+}
+.parallax1{
+    height: 400px;
+    background: url(family.jpg) no-repeat fixed 100%;
+    background-size: cover;
+}
+.parralax-inner1{
+    padding-top: 30%;
+    padding-bottom: 30%;
+}
+.contacts{
+    text-align: center;
+    text-decoration: none;
+    color:#fff;
+}
+
+.sidebar
+{
+    position: fixed;
+    left:-250px;
+    width: 250px;
+    height:100%;
+    z-index: 1000;
+    background:#000;
+    transition: all .5s ease;
+
+
+}
+.sidebar header
+{
+    font-size: 18px;
+    color: white;
+    text-align: center;
+    line-height: 70px;
+    background: #000;
+    user-select: none;
+}
+.sidebar ul a{
+    display:block;
+    height: 100%;
+    width: 100%;
+    line-height: 65px;
+    font-size: 20px;
+    color: white;
+    padding-left: 40px;
+    box-sizing: border-box;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    transition:.4s;
+}
+ul li:hover a{
+    padding-left: 50px;
+}
+#check{
+
+    display: none;
+}
+label #btn, label #cancel{
+   position:absolute; 
+   cursor: pointer;
+   background: #000;
+   border-radius: 3px;
+}
+label #btn{
+    content: 'Open';
+    left: 40px;
+    top: 25px;
+    position: sticky;
+    font-size: 35px;
+    color:white;
+    color: white;
+    font-size: 10px;
+    padding: 6px 12px;
+    transition: all .5s;
+}
+label #cancel{
+    position:relative;
+    content: 'Close';
+    z-index: 1111;
+    left: -195px;
+    top: 17px;
+    font-size: 10px;
+    color:#fff;
+    padding: 4px 9px;
+    transition: all .5s ease;
+}
+#check:checked ~ .sidebar{
+    left: 0;
+}
+#check:checked ~ label #btn{
+    left: 250px;
+    opacity: 0;
+    pointer-events: none;
+}
+#check:checked ~ label #cancel{
+    top: 23px;
+    left: 10px;
+    position:sticky
+}
+#VR{
+    position: relative;
+    left:600px;
+    width: 750px;
+    height: 750px;
+    bottom: 100px;
+    margin: 0;
+    object-fit: contain;
+}
+#section1 h1{
+    font-size: 4em;
+    color:#fff;
+    font-weight: 500;
+    top: 125px;
+    left: 90px;
+    margin: 0;
+    display:flex;
+    position:relative;
+}
+#section1 h2{
+    font-size: 2em;
+    color:#fff;
+    font-weight: 500;
+    top: 130px;
+    left: 110px;
+    margin: 0;
+    display:flex;
+    position:relative;
+}
+#VRC{
+    position: relative;
+    right:150px;
+    rotate: -70deg;
+    width: 300px;
+    height: 300px;
+    bottom: 100px;
+    margin: 0;
+    object-fit: contain;
+    z-index:1000;
+}
+#section1 h3{
+    font-size: 2em;
+    color:#fff;
+    font-weight: 500;
+    top: 140px;
+    left: 110px;
+    margin: 0;
+    display:flex;
+    position:relative;
+}
+
+#section1 h4{
+    font-size: 0.5em;
+    color:#fff;
+    font-weight: 500;
+    top: 145px;
+    left: 110px;
+    margin: 0;
+    display:flex;
+    position:relative;
+}
